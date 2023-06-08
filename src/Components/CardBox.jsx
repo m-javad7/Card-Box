@@ -3,6 +3,7 @@ import CardBoxDescription from './CardBoxDescription';
 import CardLink from './CardLink.jsx';
 import CardImage from './CardImage.jsx';
 
+// eslint-disable-next-line react/prop-types
 const CardBox = ({ imageUrl, title, description, linkShare, link1Url,linkMore, link2Url }) => {
     return (
         <div className="card">
