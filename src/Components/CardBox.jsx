@@ -1,16 +1,19 @@
 import CardBoxTitle from './CardBoxTitle';
 import CardBoxDescription from './CardBoxDescription';
-import CardBoxButton from './CardButton';
+import CardLink from './CardLink.jsx';
 import CardImage from './CardImage.jsx';
 
-const CardBox = ({ imageUrl, title, description, buttonText, onButtonClick }) => {
+const CardBox = ({ imageUrl, title, description, linkShare, link1Url,linkMore, link2Url }) => {
     return (
         <div className="card">
             <div className="card-box">
                 <CardImage imageUrl={imageUrl} />
                 <CardBoxTitle title={title} />
                 <CardBoxDescription description={description} />
-                <CardBoxButton buttonText={buttonText} onButtonClick={onButtonClick} />
+                <div className="card-link">
+                    <CardLink url={link1Url} text={linkShare}/>
+                    <CardLink url={link2Url} text={linkMore}/>
+                </div>
             </div>
         </div>
     );
