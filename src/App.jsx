@@ -9,8 +9,8 @@ const App = () => {
         <div>
             <CardBox
                 imageUrl="src/assets/car.jpg"
-                title="Card Title"
-                description="This is a description of the card."
+                title="Lizard"
+                description="Chevrolet is an iconic American car brand known.for its reliable, dependable, and affordable vehicles. Founded in 1911, Chevy has become one of the most recognizable car brands in the"
                 buttonText="Click Me"
                 onButtonClick={handleButtonClick}
             />
